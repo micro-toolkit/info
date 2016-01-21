@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Micro Toolkit by micro-toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Micro Toolkit</h1>
+      <h2 class="project-tagline">This repository will contain generic information about the project</h2>
+      <a href="https://github.com/micro-toolkit/info" class="btn">View on GitHub</a>
+      <a href="https://github.com/micro-toolkit/info/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/micro-toolkit/info/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="motive" class="anchor" href="#motive" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motive</h2>
+
+<p>Micro-toolkit started to be a smaller project named ZMQ Service Suite, this project included a set of libraries that would allow you to build microservices using ZeroMQ as a transport layer. The libraries were built to solve a single problem, expose business logic as microservices with 0 friction using RPC style.</p>
+
+<p>The libraries were being used in several enterprise projects and some patterns started to appear.</p>
+
+<h2>
+<a id="goal" class="anchor" href="#goal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goal</h2>
+
+<p>The idea is to evolve the project into a set of tools and microservices than can be reused across projects.</p>
+
+<h2>
+<a id="current-state" class="anchor" href="#current-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current State</h2>
+
+<p>Currently the toolkit uses a minimal service broker implemented on top of ZeroMQ. The broker acts as a Service Directory and Load Balancer, this component will do the bridge between services and clients with support for multiple technologies. For more information about this please check <a href="http://micro-toolkit.github.io/zmq-service-suite-specs/">ZSS Specs</a>.</p>
+
+<p>The client and services libraries hide the transport layer complexity under a well defined API. This approach will allow changing the implementations and topologies without the need to change the service implementations.</p>
+
+<p>The current stable projects/features:</p>
+
+<ul>
+<li>
+<a href="https://github.com/micro-toolkit/zmq-service-suite-broker-js">Node.js Broker</a>: Node.js ZeroMQ Broker implementation of ZSS Protocol with support for service discovery and load balancing</li>
+<li>
+<a href="https://github.com/micro-toolkit/zmq-service-suite-client-js">Node.js Client</a>: Node.js ZeroMQ Client implementation of ZSS Protocol</li>
+<li>
+<a href="https://github.com/micro-toolkit/zmq-service-suite-service-js">Node.js Service</a>: Node.js ZeroMQ Service implementation of ZSS Protocol</li>
+<li>
+<a href="https://github.com/micro-toolkit/zmq-service-suite-ruby">Ruby Client</a>: Ruby ZeroMQ Service implementation of ZSS Protocol</li>
+<li>
+<a href="https://github.com/micro-toolkit/zmq-service-suite-ruby">Ruby Service</a>: Ruby ZeroMQ Service implementation of ZSS Protocol</li>
+</ul>
+
+<h2>
+<a id="future" class="anchor" href="#future" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future</h2>
+
+<ul>
+<li>HTTP Rest API proxy</li>
+<li>Administration Console with support for: list available services and their instances, to execute requests to services, replay messages, view service metrics;</li>
+<li>Support service discovery and remove broker single point of failure</li>
+<li>Metrics service</li>
+<li>Authentication service</li>
+<li>Generic HTTP connectors</li>
+<li>Add support to other languages</li>
+<li>Support for event driven services</li>
+</ul>
+
+<h1>
+<a id="where-to-start" class="anchor" href="#where-to-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where to start</h1>
+
+<ul>
+<li>
+<a href="https://github.com/micro-toolkit/zss-service-sample">Ruby Client</a>: Ruby Client sample</li>
+<li>
+<a href="https://github.com/micro-toolkit/zss-service-sample">Ruby Service</a>: Ruby Service sample</li>
+</ul>
+
+<h2>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h2>
+
+<p>The project is currently authored and maintained by <a href="https://github.com/pjanuario" class="user-mention">@pjanuario</a> and <a href="https://github.com/dadah" class="user-mention">@dadah</a>. Contributors are welcome, feel free to contact us to discuss any idea or any clarification, bonus points for pull requests! :D</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/micro-toolkit/info">Micro Toolkit</a> is maintained by <a href="https://github.com/micro-toolkit">micro-toolkit</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-52968661-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
